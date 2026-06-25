@@ -1,27 +1,28 @@
-import { Outlet }
-from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
-import BottomNav
-from "./BottomNav";
+import BottomNav from "./BottomNav";
 
-import DailyWisdom
-from "../../components/ai/DailyWisdom";
+import DailyWisdom from "../../components/ai/DailyWisdom";
 
-export default function
-AppLayout() {
+export default function AppLayout() {
   return (
-    <div className="
+    <div
+      className="
       min-h-screen
       bg-slate-950
       text-slate-100
-    ">
+    "
+    >
       <DailyWisdom />
 
-      <main className="
-        mx-auto
-        max-w-md
-        pb-24
-      ">
+      <main
+        className="
+    mx-auto
+    max-w-lg
+    px-3
+    pb-28
+  "
+      >
         <Outlet />
       </main>
 

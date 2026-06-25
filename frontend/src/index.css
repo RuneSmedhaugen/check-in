@@ -4,18 +4,33 @@
   color-scheme: dark;
 }
 
+html {
+  background: #09090b;
+}
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
 
-  background-color: #0f172a;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(20, 184, 166, 0.08),
+      transparent 40%
+    ),
+    #09090b;
+
   color: #f8fafc;
 
   font-family:
     Inter,
     system-ui,
     sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 @keyframes marquee {
